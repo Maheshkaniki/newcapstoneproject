@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav a:hover {
+    text-decoration: underline;
+}
+
+.header .user-profile {
+    cursor: pointer;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+.performance-metrics,
+.security-metrics,
+.analytics-metrics,
+.insights-metrics,
+.settings-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.performance-metrics > div,
+.security-metrics > div,
+.analytics-metrics > div,
+.insights-metrics > div,
+.settings-options > div {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gauge {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+   Continuing with the CSS for your enhanced dashboard:
+
+### Enhanced CSS (Continued)
+
+```css
+.progress {
+    height: 20px;
+    background-color: #4caf50;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.real-time-alerts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.real-time-alerts li {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.kpis p {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.header .nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .performance-metrics,
+    .security-metrics,
+    .analytics-metrics,
+    .insights-metrics,
+    .settings-options {
+        flex-direction: column;
+    }
+
+    .performance-metrics > div,
+    .security-metrics > div,
+    .analytics-metrics > div,
+    .insights-metrics > div,
+    .settings-options > div {
+        flex: 1 1 100%;
+    }
+}
